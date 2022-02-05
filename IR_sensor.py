@@ -28,6 +28,13 @@ class IR_sensor:
                 adc_readings=[]
                 return return_val
 
-ir1 = IR_sensor(board.GP28)
-print(ir1)
-ir1.ir_reading()
+# ir1 = IR_sensor(board.GP28)
+# print(ir1)
+# ir1.ir_reading()
+
+def test_ir(amt_readings):
+  ir_test = IR_sensor(board.GP28)
+  for i in range(amt_readings):
+    print(ir_test)
+    
+test_ir(1000)
